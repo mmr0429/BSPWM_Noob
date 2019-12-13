@@ -29,7 +29,8 @@ XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 
-
+super + p
+	thunar
 
 
 #

@@ -28,7 +28,8 @@ XF86AudioLowerVolume
 XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-
+super + b
+	firefox
 super + p
 	thunar
 

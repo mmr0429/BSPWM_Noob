@@ -11,3 +11,4 @@ polybar example &
 
 echo "Polybar launched..."
 xdo lower -N "polybar-example_DP-1" &
+xdo lower -N Polybar

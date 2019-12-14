@@ -1,7 +1,7 @@
 #! /bin/sh
 
 sxhkd &
-picom &
+picom --config ~/.config/compton/compton.conf &
 bash ~/.config/polybar/launch.sh &
 nitrogen --restore &
 

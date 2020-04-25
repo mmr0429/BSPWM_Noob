@@ -18,22 +18,22 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #272543
-background-alt = #433f73
+background = #282a36
+background-alt = #44475a
 ;foreground = ${xrdb:color7:#222}
 foreground = #ffffff
 foreground-alt = #a9a9a9
-primary = #ED6A69
+primary = #ff5555
 secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
-width = 98%
-height = 27
-offset-x = 1.0%
-offset-y = 0.5%
-radius = 7.0
+width = 100%
+height = 22
+offset-x = 0%
+offset-y = 0%
+radius = 0
 fixed-center = false
 
 background = ${colors.background}
@@ -56,7 +56,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm 
-modules-right = filesystem xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = filesystem wlan eth battery temperature date powermenu
 
 tray-position = none
 tray-padding = 0
@@ -102,7 +102,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#f1fa8c}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -151,7 +151,7 @@ interface = wlp3s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
+format-connected-underline = #bd93f9
 label-connected = %essid%
 
 format-disconnected =
@@ -195,7 +195,7 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
+format-underline = #8be9fd
 
 label = %date% %time%
 
@@ -206,7 +206,7 @@ adapter = ADP0
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = #ffb86c
 
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
@@ -238,7 +238,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #f50a4d
+format-underline = #ff5555
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 

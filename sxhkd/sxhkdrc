@@ -7,8 +7,8 @@ super + Return
 	urxvt
 
 # program launcher
-super + @space
-	dmenu_run -b -nb "#272543" -sb "#6E5886" -fn UbuntuMono:size=11
+super + d
+        dmenu_run -nf '#BFBFBF' -nb '#282a36' -sb '#6272a4' -sf '#F8F8F2' -fn 'UbuntuMono' -p 'dmenu%' -h 22
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -34,18 +34,22 @@ super + p
 	urxvt -e vifm
 
 super + shift + x
-	lxdm -c USER_SWITCH
+	dm-tool lock
 
 # bspwm hotkeys
 #
 
 # quit/restart bspwm
-super + alt + {q,r}
+super + alt + {t,y}
 	bspc {quit,wm -r}
 
 # close and kill
-super + {_,shift + }w
-	bspc node -{c,k}
+#super + {_,shift + }q
+#	bspc node -{c,k}
+
+super + shift + q
+	bspc node -c
+
 
 # alternate between the tiled and monocle layout
 super + m
